@@ -38,7 +38,9 @@ public:
                 }
             }
             else {
-                if(set_t.find(ct) != set_t.end()) {
+                // if a character of s has not been mapped but
+                // the character of t has been mapped then return false
+                if (set_t.find(ct) != set_t.end()) {
                     return false;
                 }
             }
