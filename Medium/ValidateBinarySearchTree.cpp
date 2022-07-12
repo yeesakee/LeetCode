@@ -32,7 +32,6 @@ struct TreeNode {
 
 class Solution {
     public:
-
         bool validate(TreeNode* root, TreeNode* left, TreeNode* right) {
             if (root != nullptr) {
                 if (left != nullptr && root->val <= left->val || right != nullptr && root->val >= right->val) {
