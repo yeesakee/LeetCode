@@ -48,6 +48,6 @@ public:
                 kthSmallest(root->right, k);
             }
         }
-        return 0;
+        return kthSmallestValue;
     }
 };
